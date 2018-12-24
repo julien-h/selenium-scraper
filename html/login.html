@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>form { display: block; width: 300px; margin: auto; }</style>
+</head>
+<body>
+<form name="login" method="get" action="/submit">
+    <fieldset>
+        <legend>&nbsp;&nbsp;Member Login</legend>
+        <div class="row" id="recaptcha-row" style="display: none;" data-recaptcha-theme="clean">
+            <div class="element-title" style="display:none;"></div>
+            <div class="element am-element-recaptcha" id="recaptcha-element">
+                                            </div>
+        </div>
+        <div class="row">
+            <div class="element-title">
+                <label class="element-title" for="login">E-Mail Address or Username</label>
+            </div>
+            <div class="element">
+                <input type="text" id="login" name="amember_login" size="15" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="element-title">
+                <label class="element-title" for="pass">Password</label>
+            </div>
+            <div class="element">
+                <input type="password" id="pass" name="amember_pass" size="15">
+            </div>
+        </div>
+                                <div class="row">
+            <div class="element-title">
+                <label class="element-title" for="remember">Remember my password?</label>
+            </div>
+            <div class="element">
+                <input type="checkbox" name="remember_login" value="1">
+            </div>
+        </div>
+                                <div class="row">
+            <div class="element-title"></div>
+            <div class="element" style="vertical-align: baseline">
+                <input type="submit" value="Login">
+            </div>
+        </div>
+    </fieldset>
+    <input type="hidden" name="login_attempt_id" value="1545663712">
+</form>
+</body>
+</html>
